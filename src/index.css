@@ -1,0 +1,112 @@
+body {
+  background-color: #1a1a1a;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eeffff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/*DROPDOWN-----------------*/
+.dropdown-title {
+  margin: 10px;
+  font-weight: 700;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 200px;
+}
+
+.dropdown {
+  background-color: #212121;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/*MOVIES-----------------*/
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 6px;
+  position: relative;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 200px;
+  max-height: 400px;
+  margin: 10px;
+}
+
+img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  font-size: small;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+/*BUTTONS-----------------*/
+
+button {
+  position: absolute;
+  top: 45%;
+  background-color: #212121;
+  opacity: 0.6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+  font-weight: bolder;
+  border: rgba(255, 255, 255, 0.2) solid 0.1px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.left {
+  left: -10%;
+}
+
+button.right {
+  right: -10%;
+}
+
+@media (max-width: 850px) {
+  button.left {
+    left: 0%;
+  }
+
+  button.right {
+    right: 0%;
+  }
+}
+
+@media (max-width: 470px) {
+  .inv-res {
+    display: none;
+  }
+}
